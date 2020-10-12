@@ -5,7 +5,7 @@ class OpenWeather {
   
   getCurrent() {
     // 華氏
-    return { temp: 80.33 }
+    return { temperature: 80.33 }
   }
 
 }
