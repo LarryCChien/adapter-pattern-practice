@@ -1,5 +1,4 @@
 const WeatherAPI = require('./WeatherAPI.js')
-const OpenWeather = require('./OpenWeather.js')
 const OpenWeatherAdapter = require('./OpenWeatherAdapter.js')
 
 class Dashboard {
@@ -13,8 +12,7 @@ class Dashboard {
   }
 }
 
-// const weatherSource = new OpenWeatherAdapter('台北')
-// const weatherSource = new OpenWeather('台北')
-const weatherSource = new WeatherAPI('台北')
+const weatherSource = new OpenWeatherAdapter('台北')
+// const weatherSource = new WeatherAPI('台北')
 const dashboard = new Dashboard(weatherSource)
 dashboard.displayWeather()
